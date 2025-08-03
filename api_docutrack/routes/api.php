@@ -15,5 +15,8 @@ Route::group(['prefix' => 'auth'], function() {
         Route::get('me', [usersaccessController::class, 'me']);
         Route::post('refresh', [usersaccessController::class, 'refreshToken']);
         Route::post('createrequest', [requestsController::class, 'createrequest']);
+        Route::post('listrequests', [requestsController::class, 'listrequests']);
+        Route::post('listrequestsAdmin', [requestsController::class, 'listrequestsAdmin']);
+        Route::post('updateStatus', [requestsController::class, 'updateStatus']);
     });
 });
