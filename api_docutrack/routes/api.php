@@ -18,5 +18,8 @@ Route::group(['prefix' => 'auth'], function() {
         Route::post('listrequests', [requestsController::class, 'listrequests']);
         Route::post('listrequestsAdmin', [requestsController::class, 'listrequestsAdmin']);
         Route::post('updateStatus', [requestsController::class, 'updateStatus']);
+        Route::post('updateStatusComment', [requestsController::class, 'updateStatusComment']);
+        Route::post('editrequest', [requestsController::class, 'editrequest']);
+        Route::post('searchrequest', [requestsController::class, 'searchrequest']);
     });
 });

@@ -16,6 +16,7 @@ class requests extends Model
         'cedula',
         'status',
         'emitido',
-        'file_route'
+        'file_route',
+        'comment',
     ];
 }
